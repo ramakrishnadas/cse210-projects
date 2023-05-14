@@ -1,4 +1,8 @@
 using System;
+// I exceeded the core requirements in the Load Method of the Journal Class.
+// The Load Method creates an Entry object for each entry in the file that the user wishes to load.
+// It defines the attributes of each new Entry, including the date, prompt, and answer.
+// In this way, the loaded Journal can then be displayed with the option provided in the Menu (option number 2).
 
 class Program
 {
