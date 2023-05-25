@@ -1,5 +1,5 @@
 using System;
-// I ecxeeded the core requirements in the Scripture.HideWords() Method. 
+// I exceeded the core requirements in the Scripture.HideWords() Method. 
 // When hiding words, this method will only select words that weren't already hidden. 
 // Therefore, every time the user presses enter, three random words will be hidden and replaced with underscores,
 // and the program will not try to hide words that are already hidden.
