@@ -108,7 +108,7 @@ public class GoalsLog
             }
             else 
             {
-                Console.WriteLine($"You have lost {pointsGained} points. Failure is a stepping stone to success. Keep pushing forward.");
+                Console.WriteLine($"You have lost {pointsGained * -1} points. Failure is a stepping stone to success. Keep pushing forward.");
             }
             
             Console.WriteLine($"You now have {_currentScore} points.");
