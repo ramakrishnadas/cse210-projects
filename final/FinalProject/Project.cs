@@ -19,12 +19,16 @@ public class Project
     {
         _tasks.Add(task);
     }
-    public void RemoveTask(Task task)
+    public void RemoveTask(int taskIndex)
     {
-         _tasks.Remove(task);
+         _tasks.RemoveAt(taskIndex);
     }
     public List<Task> GetTasks()
     {
         return _tasks;
+    }
+    public string GetName()
+    {
+        return _name;
     }
 }

@@ -1,19 +1,17 @@
 public class User
 {
     private string _username;
-    private string _password;
     private List<Task> _tasks;
 
-    public User(string username, string password)
+    public User(string username)
     {
         _username = username;
-        _password = password;
         _tasks = new List<Task>();
     }
 
-    public void Authenticate()
+    public string GetUsername()
     {
-
+        return _username;
     }
     public virtual void AssignTask(Task task, User assignee)
     {
@@ -32,7 +30,7 @@ public class User
     {
         for (int i = 0; i < _tasks.Count; i++)
         {
-            Console.Write($"{i}. ");
+            Console.Write($"{i + 1}. ");
             _tasks[i].DisplayTask();
         }
     }

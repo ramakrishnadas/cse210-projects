@@ -3,7 +3,7 @@ public class Team : User
     private string _teamName;
     private List<User> _teamMembers;
 
-    public Team(string username, string password, string teamName) : base(username, password)
+    public Team(string username, string teamName) : base(username)
     {
         _teamName = teamName;
         _teamMembers = new List<User>();
@@ -36,5 +36,9 @@ public class Team : User
     public void RemoveTeamMember(User user)
     {
         _teamMembers.Remove(user);
+    }
+    public string GetTeamName()
+    {
+        return _teamName;
     }
 }
